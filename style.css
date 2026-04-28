@@ -22,7 +22,7 @@ body{
 
 .sidebar {
     height: 100%;
-    width: 150px;
+    width: auto;
     background-color: hsl(0, 0%, 8%);
     position: fixed;
     left: 0;
@@ -63,7 +63,6 @@ p {
 
 section{ 
     margin-bottom:300px ;
-    margin-left: 150px;
 
 }
 
@@ -76,7 +75,7 @@ img {
 }
 
 video {
-    width: 600px; 
+    width: 100%; 
     height: auto;
     margin-top: 50px;
 }
@@ -96,4 +95,8 @@ body.dark{
     text-decoration: none;
     display: block;
     color: black;
+}
+
+h2{
+    font-size: 30px;
 }
