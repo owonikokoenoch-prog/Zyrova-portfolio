@@ -1,0 +1,99 @@
+body{
+    display: block;
+    text-align: center;
+    align-items: center;
+
+}
+
+.blue{
+    color: #5252fe;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 150px;
+    background-color: hsl(0, 0%, 8%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    margin-top: 0px;
+
+
+    
+}
+
+.sidebar a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 40px;
+    margin-top: 30px;
+
+}
+
+
+.sidebar a:hover{
+    background-color:hsl(252, 56%, 52%);
+}
+
+button{
+    margin-left: 0px;
+    margin-top: 20px;
+    border-width: 0;
+    width: 80px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+p {
+    font-size: 25px;
+}
+
+section{ 
+    margin-bottom:300px ;
+    margin-left: 150px;
+
+}
+
+img {
+    width: 250px;
+    height: auto;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+video {
+    width: 600px; 
+    height: auto;
+    margin-top: 50px;
+}
+
+body.light{
+    background-color: white;
+    color: black;
+}
+
+
+body.dark{
+    background-color: #222;
+    color: white;
+}
+
+.contact{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
