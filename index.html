@@ -1,88 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zynova Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-            <button onclick="toggleSidebar()">MENU</button>
-        <div class="sidebar">
+    <div class="overlay" id="overlay"></div>
 
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#Services">Services</a>
-            <a href="#Contact">Contact</a>
-                
-        </div>
+    <header class="header">
+        <img class="logo" src="IMAGES/file_00000000e92071f49ab96b1a1a64aede.png" alt="Zynova Logo">
+        <h1>Welcome to Zynova</h1>
+        <h4>WHERE YOUR IDEAS <span class="highlight">BECOME DIGITAL REALITY</span></h4>
+        <button id="menu-btn" aria-label="Open Menu">MENU</button>
+    </header>
 
-        
-    
-    <img class="logo" src="IMAGES/file_00000000e92071f49ab96b1a1a64aede.png" alt="our logo">
-    <h1>Welcome to Zynova.
-    </h1>
-    <h4>WHERE YOUR IDEAS <em class="blue">DIGITAL REALITY </em></h4>
-    <section id="Home">  
-        <p>Here is Zynova we create quality websites to fit your imagination, design fliers, logo design, business cards, social media posts, content template 
-            story design, ad creatives, posters and so on. Our priority is your satisfaction and creativity is something that will keeep improving.
-        </p> 
-    </section>
-    <section id="About">
-        <p>
-            The world is evolving and we all have to evolve with it so we wont be left behind. To do that businesses and individuals need to bring their imaginationto life 
-        and we do just that. We help you digitalise your dreams, visions and help you reach a state where distance is not a problem and communication between business owners
-        and customers is very easy to establish. We are not perfect at what we do but we will do our best not to disappoint you.
-        </p>
-    </section>
-    <section id="Portfolio">
-        <h2>This are examples of what we have created</h2>
-        <img src="IMAGES/file_000000008f9c722f9be11ab4bb838c18.png" alt="">
-        <img src="IMAGES/file_00000000b2e071f4b41125d886a893f6.png" alt="">
-        <img src="IMAGES/file_00000000b790720bb23341b504bd744f.png" alt="">
-        <img src="IMAGES/file_00000000e92071f49ab96b1a1a64aede.png" alt="">
-        <video autoplay muted loop playsinline src="IMAGES/fastbite project.mp4"></video>
-        <video autoplay muted loop playsinline src="IMAGES/SHIELD .mp4"></video>
-    </section>
-    <section id="Services">
-        <p>We make websites for business, individuals. we also do graphics designing like creation of logos, business cards
-            social media posts, posters, story designs, banners, event graphics, company profiles, brochures, presentation slides, website UI design
-            app mockup at a very affordable price.
-        </p>
-    </section>
-    <section id="Contact">
-        <p>
-            contact us on 
-                <a href="https://wa.me/2348105969202" target="_blank">08105969202</a> <br>
-            <a href="mailto:zyrova80@gmail.com" target="_blank">email</a>
-            
-        </p>
-    </section>
-    
-<button id="theme-btn">change</button>
-     <div class="rate-box">
+    <nav id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn" aria-label="Close Menu">&times;</button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-   <div class="stars">
+    <main>
+        <section id="home" class="section">
+            <h2>Our Mission</h2>
+            <p>At Zynova, we create quality websites tailored to your imagination. We design flyers, logos, business cards, social media posts, content templates, story designs, ad creatives, posters, and more. Your satisfaction is our priority, and our creativity continuously evolves.</p>
+        </section>
 
-      <span class="star">★</span>
-      <span class="star">★</span>
-      <span class="star">★</span>
-      <span class="star">★</span>
-      <span class="star">★</span>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>The world is evolving, and we believe you should evolve with it. Businesses and individuals need to bring their imagination to life, and that's exactly what we do. We help you digitalize your dreams and visions, breaking geographical barriers and simplifying communication between business owners and customers. While we're always learning, we guarantee our best effort to exceed your expectations.</p>
+        </section>
 
-   </div>
+        <section id="portfolio" class="section">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <img src="IMAGES/file_000000008f9c722f9be11ab4bb838c18.png" alt="Portfolio work 1">
+                <img src="IMAGES/file_00000000b2e071f4b41125d886a893f6.png" alt="Portfolio work 2">
+                <img src="IMAGES/file_00000000b790720bb23341b504bd744f.png" alt="Portfolio work 3">
+                <img src="IMAGES/file_00000000e92071f49ab96b1a1a64aede.png" alt="Portfolio work 4">
+                <video autoplay muted loop playsinline src="IMAGES/fastbite project.mp4"></video>
+                <video autoplay muted loop playsinline src="IMAGES/SHIELD.mp4"></video>
+            </div>
+        </section>
 
-   <textarea id="comment"></textarea>
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p>We build responsive websites for businesses and individuals. Our graphic design services include logo creation, business cards, social media posts, posters, story designs, banners, event graphics, company profiles, brochures, presentation slides, website UI design, and app mockups—all at affordable rates.</p>
+        </section>
 
-   <button type="button" class="rating" onclick="submitReview()">
-      Submit Review
-   </button>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Get in touch via:</p>
+            <div class="contact-links">
+                <a href="https://wa.me/2348105969202" target="_blank" rel="noopener noreferrer">WhatsApp: 08105969202</a>
+                <a href="mailto:zyrova80@gmail.com">Email: zyrova80@gmail.com</a>
+            </div>
+        </section>
 
+        <section id="reviews" class="section review-section">
+            <h2>Leave a Review</h2>
+            <div class="rate-box">
+                <div class="stars" id="star-container">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <textarea id="comment" placeholder="Share your experience with us..." maxlength="500"></textarea>
+                <button type="button" class="rating-btn" id="submit-review">Submit Review</button>
+                <p id="message" class="review-message"></p>
+            </div>
+        </section>
+    </main>
 
-           <p id="message"></p>
-    </div>
+    <button id="theme-btn" aria-label="Toggle Theme">🌙</button>
     <script type="module" src="script.js"></script>
-
 </body>
 </html>
