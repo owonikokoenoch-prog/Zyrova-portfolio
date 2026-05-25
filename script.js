@@ -1,19 +1,35 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+// Firebase Imports from CDN
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
 
-// ⚠️ REPLACE WITH YOUR ACTUAL FIREBASE CONFIG
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
+
+import {
+    getFirestore,
+    collection,
+    addDoc
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+// Firebase Config
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyBR5-K_AXMv0XytXM4b_UII0hX2HLfaK0w",
+    authDomain: "zyrova-portfolio.firebaseapp.com",
+    projectId: "zyrova-portfolio",
+    storageBucket: "zyrova-portfolio.firebasestorage.app",
+    messagingSenderId: "84856751053",
+    appId: "1:84856751053:web:1475f574e71aee612a3a84",
+    measurementId: "G-M3BTXRRK0Q"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Analytics
+const analytics = getAnalytics(app);
+
+// Firestore
 const db = getFirestore(app);
-console.log("✅ Firestore Connected");
+
+console.log("✅ Firebase Connected");
 
 // DOM Elements
 const menuBtn = document.getElementById('menu-btn');
