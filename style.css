@@ -144,6 +144,7 @@ textarea:focus { outline: none; border-color: var(--primary); }
     .portfolio-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
     .portfolio-grid img, .portfolio-grid video { height: 180px; }
     .review-section { margin: 2rem 1rem; padding: 2rem 1rem; }
+    .bg-video {display: none; }
 }
 @media (max-width: 480px) {    .logo { width: 120px; height: 120px; }
     .stars .star { font-size: 2rem; }
